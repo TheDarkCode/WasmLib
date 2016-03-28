@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WasmLib", "WasmLib\WasmLib.csproj", "{F74BDB4E-29F9-4A6D-8BD0-A372809D86B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WasmLib.Tests", "WasmLib.Tests\WasmLib.Tests.csproj", "{6D0B4FE0-0B58-4E8D-B3C4-88CA8F7EDF74}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WasmLib.Debug", "WasmLib.Debug\WasmLib.Debug.csproj", "{4F65B7C0-1110-49E0-96E3-9CC518DCEC08}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F74BDB4E-29F9-4A6D-8BD0-A372809D86B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F74BDB4E-29F9-4A6D-8BD0-A372809D86B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F74BDB4E-29F9-4A6D-8BD0-A372809D86B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F74BDB4E-29F9-4A6D-8BD0-A372809D86B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D0B4FE0-0B58-4E8D-B3C4-88CA8F7EDF74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D0B4FE0-0B58-4E8D-B3C4-88CA8F7EDF74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D0B4FE0-0B58-4E8D-B3C4-88CA8F7EDF74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D0B4FE0-0B58-4E8D-B3C4-88CA8F7EDF74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F65B7C0-1110-49E0-96E3-9CC518DCEC08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F65B7C0-1110-49E0-96E3-9CC518DCEC08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F65B7C0-1110-49E0-96E3-9CC518DCEC08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F65B7C0-1110-49E0-96E3-9CC518DCEC08}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
