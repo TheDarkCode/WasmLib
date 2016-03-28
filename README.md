@@ -1,5 +1,5 @@
 # WasmLib
-Library for reading, altering and writing WebAssembly's binary files (WASM)
+C# Library for reading, altering and writing WebAssembly's binary files (WASM)
 
 Work in progress... ASTs are not yet parsed.
 
