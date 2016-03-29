@@ -6,7 +6,7 @@ namespace WasmLib.Extensions
 {
 	public static class BinaryWriterExtensions
 	{
-		public static void WriteSizedPart(this BinaryWriter writer, Action<BinaryWriter> action, int padding = 0)
+		public static long WriteSizedPart(this BinaryWriter writer, Action<BinaryWriter> action, int padding = 0)
 		{
 			var buffer = new MemoryStream();
 			using (var bufferWriter = new BinaryWriter(buffer))
@@ -14,6 +14,7 @@ namespace WasmLib.Extensions
 				action(bufferWriter);
 				WriteVarUint32(writer, (uint) buffer.Length, padding);
 				writer.Write(buffer.ToArray());
+				return buffer.Length;
 			}
 		}
 

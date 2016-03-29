@@ -7,7 +7,7 @@ namespace WasmLib.Metadata.Sections
 	public abstract class Section
 	{
 		public string Id { get; protected set; }
-		protected ulong Size { get; set; }
+		protected internal ulong Size { get; set; }
 		protected ulong Marker { get; set; }
 
 		public static Section Read(BinaryReader reader)
@@ -31,7 +31,7 @@ namespace WasmLib.Metadata.Sections
 
 		public void Write(BinaryWriter writer)
 		{
-			writer.WriteSizedPart(w =>
+			Size = (ulong) writer.WriteSizedPart(w =>
 			{
 				w.WriteVarString(Id);
 				WriteSpecific(w);
